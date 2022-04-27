@@ -17,6 +17,8 @@ public class Main {
 		Ver nameVer = new Ver(555, "justin", 1234);
 		nameVer.testVererbung();
 		
+		
+		
 	}
 
 }
