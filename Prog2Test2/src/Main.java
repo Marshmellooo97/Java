@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class Main {
@@ -16,6 +17,14 @@ public class Main {
 		System.out.println(quersumme(333));
 		System.out.println(quersummeN(333, 2));
 		System.out.println(sumOfMatrix(new double[][] { { 1., 1., 1. }, { 2., 2., 2. }, { 3., 3., 3. } }));
+		System.out.println(Arrays.deepToString(modelExample(new double[][] { { 1., 1., 1. }, { 2., 2., 2. }, { 3., 3., 3. } })));
+		
+		double[][] arr = new double[1][1];
+		arr[0][0] = 1.0;
+		System.out.println(arr);
+		
+		
+		
 	}
 	/*
 	public static boolean hat222(int x) {
@@ -111,15 +120,28 @@ public class Main {
 	
 	public static double sumOfMatrix(double[][] x){
 		double erg = 0;
-		for (int i = 0; i < x.length; i++) {
-			for (int j = 0; j < x.length; j++) {
-				erg = erg + x[i][j];	
+		for (double[] subArray : x) {
+			for (double number : subArray) {
+				erg = erg + number;
 			}
 		}
 		return erg;
 	}
 	
-	
+	public static double[][] modelExample(double[][] x){
+		double erg = 0;
+		double[][] ergArr = new double[x.length][];
+		int i = 0;
+		for (double[] subArray : x) {
+			for (double number : subArray) {
+				erg = erg + number;
+			}
+			
+			//ergArr[i][0] = erg;
+			i++;
+		}
+		return ergArr;
+	}
 	
 	
 	
