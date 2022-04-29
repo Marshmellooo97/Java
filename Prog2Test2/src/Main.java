@@ -150,7 +150,7 @@ public class Main {
 	// Test 5
 	// Test 6
 	
-	public int linkeQuersummeN(int x, int N) 
+	public static int linkeQuersummeN(int x, int N) 
 	{
 	        java.util.ArrayList<Integer> zahlen = new java.util.ArrayList<Integer>();
 			int count = 0;
