@@ -150,7 +150,29 @@ public class Main {
 	// Test 5
 	// Test 6
 	
-	
+	public int linkeQuersummeN(int x, int N) 
+	{
+	        java.util.ArrayList<Integer> zahlen = new java.util.ArrayList<Integer>();
+			int count = 0;
+			int erg = 0;
+			
+			while (x != 0) {
+				zahlen.add(x%10);
+				x = x/10;
+				if (x < 0){
+			    return 0;}
+			}
+			if (N > zahlen.size()){
+			    N = zahlen.size();
+			}
+			for (int i = 0; i < N; i++) {
+				erg = erg + zahlen.get(zahlen.size() - i -1);
+			}
+			
+			
+			return erg;
+	}
+
 	
 	
 	
