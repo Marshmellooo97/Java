@@ -130,14 +130,15 @@ public class Main {
 	
 	public static double[][] modelExample(double[][] x){
 		double erg = 0;
-		double[][] ergArr = new double[x.length][];
+		double[][] ergArr = new double[x.length][1];
 		int i = 0;
 		for (double[] subArray : x) {
 			for (double number : subArray) {
 				erg = erg + number;
 			}
 			
-			//ergArr[i][0] = erg;
+			ergArr[i][0] = erg;
+			erg = 0;
 			i++;
 		}
 		return ergArr;
@@ -147,6 +148,7 @@ public class Main {
 	//Test 3
 	// Test4
 	// Test 5
+	// Test 6
 	
 	
 	
