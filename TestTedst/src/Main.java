@@ -4,23 +4,15 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Test");
-		int iZahl = 0;
-		
-		iZahl = iZahl +1;
-		
-		boolean bla = false;
-		bla = false;
-		
-		System.out.println(test(1));
-	
+		int x = 2 ;
+		x = 5 ;
+		int y = x;
+		x = -1 ;
+		System.out.println(x);
+		System.out.println(y);
 		
 	}
 
-	public static boolean test(int x) {
-		x =1;
-		return true;
-	}
 		
 	
 }
