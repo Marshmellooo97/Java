@@ -1,18 +1,20 @@
+import java.util.* ;
 
-public class Main {
+interface BaseInterface {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+  void f() ;
 
-		int x = 2 ;
-		x = 5 ;
-		int y = x;
-		x = -1 ;
-		System.out.println(x);
-		System.out.println(y);
-		
-	}
+}
 
-		
-	
+public class Main extends BaseInterface {
+
+  @Override
+  void f() {
+    System.out.println("XXX") ;
+  }
+
+  public static void main(String[] args) {
+    BaseInterface ref = new Main() ;
+    ref.f() ;    
+  }
 }
