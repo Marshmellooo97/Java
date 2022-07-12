@@ -43,7 +43,7 @@ public class Taylor {
       if (n % 4 == 2) {
         koeff *= -1 ;
       }
-      acc+=koeff / berechneFak((float)n) * potenziere(x,(int)n) ;
+      acc += koeff / berechneFak((float)n) * potenziere(x,(int)n) ;
     }
     return acc ;
   }
