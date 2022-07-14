@@ -21,7 +21,6 @@ class Unter extends Ober{
 }
 
 
-
 public class UnterOberMain {
 
 	public static void main(String[] args) {
@@ -31,6 +30,8 @@ public class UnterOberMain {
 		o.ober();
 		Ober o2 = new Unter();
 		o2.ober();
+		Unter u = new Unter();
+		u.ober();
 	}
 
 }

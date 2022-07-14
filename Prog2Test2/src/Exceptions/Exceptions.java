@@ -1,7 +1,7 @@
-package Woche10;
+package Exceptions;
 
 import java.util.* ;
-public class TestClass {
+public class Exceptions {
  static void tryout(int x) {
    try{
      System.out.print("0") ;
@@ -15,7 +15,11 @@ public class TestClass {
      return ;
    } catch(Exception f) {
      System.out.print("4") ;
+     
    }
+   finally {
+		System.out.println("jhasjf");
+	}
    System.out.print("5") ;
  }
  public static void main(String[] args) {
